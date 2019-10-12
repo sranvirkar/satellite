@@ -1,0 +1,14 @@
+.shared-VehicleSummary-Excess {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid $iron;
+
+  .price-number-rhs {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

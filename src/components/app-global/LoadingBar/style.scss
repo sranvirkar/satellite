@@ -1,0 +1,28 @@
+@import "./LoadingText/style";
+.LoadingBar-Wrapper{
+	text-align: center;
+	padding: 30px;
+}
+
+.global-LoadingBar {
+  background-color: #E6E6E8;
+  margin: 0px auto;
+}
+  
+.progress-bar{
+  background-color: #ed9e37;
+  animation: loader-progress 4s ease infinite;
+}
+  
+.global-LoadingBar, .global-LoadingBar > .progress-bar{
+  border-radius: 16px;
+}
+
+@keyframes loader-progress {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}

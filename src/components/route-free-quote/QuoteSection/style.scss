@@ -1,0 +1,40 @@
+.FreeQuote-QuoteSection {
+  > * {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .policy-start-date {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 24px;
+    background: $whisper;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .policy-start-date-field {
+    padding: 24px 24px 8px 16px;
+  }
+
+  p.total-premium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    background: $fuel-yellow;
+    color: white;
+    padding: 0 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 4px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+}

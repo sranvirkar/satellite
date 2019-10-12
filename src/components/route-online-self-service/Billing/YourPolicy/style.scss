@@ -1,0 +1,51 @@
+.YourPolicy {
+  padding: 24px 32px;
+  display: flex;
+  font-weight: 400;
+
+  .total-premium {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik";
+    background: $persian-green;
+    padding: 0 8px;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+    > p {
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 33px;
+      font-weight: 500;
+      color: white;
+
+      > span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  p.monthly-incl-gst-title {
+    padding-bottom: 8px;
+  }
+
+  div.left {
+    width: 66.66%;
+  }
+
+  div.right {
+    flex-grow: 1;
+    border-left: 1px solid $iron;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    div {
+      text-align: right;
+    }
+  }
+
+}

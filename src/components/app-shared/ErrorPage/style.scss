@@ -1,0 +1,15 @@
+.ErrorPage {
+  padding: 124px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    max-width: 670px;
+    text-align: center;
+
+    > p {
+      margin-top: 19px;
+    }
+  }
+}

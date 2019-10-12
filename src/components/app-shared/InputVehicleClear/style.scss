@@ -1,0 +1,42 @@
+.shared-InputVehicleValidate {
+
+  i.material-icons {
+    display: inline-flex;
+    color: $nobel;
+    font-size: 18px;
+    margin-left: 10px;
+
+    &.cached {
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+
+      color: $nobel;
+      animation: spin 1000ms infinite forwards linear;
+    }
+
+    &.check_circle {
+      color: $bluish-green;
+    }
+
+    &.clear {
+      color: $white;
+      border-radius: 50%;
+      height: 17px;
+      width: 17px;
+      font-size: 14px;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      background-color: $pastel-red;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+}

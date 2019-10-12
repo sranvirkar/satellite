@@ -1,0 +1,56 @@
+.shared-Tooltip-Popup {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #0C0F1F;
+  border-radius: 4px;
+  padding: 20px 0;
+  font-size: 11px;
+  line-height: 150%;
+  z-index: 1;
+  color: white;
+
+  .popup-content-wrapper {
+    padding: 0 14px;
+    overflow: auto;
+
+    p {
+      color: $white;
+    }
+  }
+
+  div.shared-Tooltip-caret {
+    position: absolute;
+    top: 100%;
+    border: 8px solid transparent;
+    box-sizing: border-box;
+    border-top-color: #0C0F1F;
+    height: 16px;
+    width: 16px;
+    cursor: default;
+  }
+
+  &.down {
+    div.shared-Tooltip-caret {
+      top: unset;
+      bottom: 100%;
+      border-top-color: transparent;
+      border-bottom-color: #e6f6ee;
+    }
+  }
+
+  > i.material-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  > span {
+    padding-right: 12px;
+    color: white;
+  }
+}

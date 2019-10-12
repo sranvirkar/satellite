@@ -1,0 +1,67 @@
+.pac-container.pac-logo.hdpi::after {
+  display: none;
+}
+
+.shared-FormFieldGroup {
+  > .label-wrapper {
+    margin-left: 8px;
+    white-space: nowrap;
+
+    > label {
+      white-space: pre-line;
+    }
+
+    > .shared-Tooltip {
+      margin-left: 0;
+    }
+  }
+
+  &.border-bottom {
+    position: relative;
+    padding-bottom: 13px; // 12 + 1
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      height: 1px;
+      width: calc(100% - 8px);
+      background: $iron;
+    }
+  }
+
+  &.border-top {
+    position: relative;
+    padding-bottom: 13px; // 12 + 1
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 8px;
+      height: 1px;
+      width: calc(100% - 8px);
+      background: $iron;
+    }
+  }
+
+  &.credit-card {
+    border-radius: 4px;
+    background: white;
+    filter: drop-shadow(0 1px 3px rgba($black, 0.2));
+    padding: 10px 15px 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    > fieldset:last-child {
+      margin-left: 15px;
+    }
+  }
+
+  > button.remove {
+    border-color: $pastel-red;
+    width: 100%;
+    margin-top: 60px;
+  }
+}

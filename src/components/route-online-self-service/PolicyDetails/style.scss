@@ -1,0 +1,12 @@
+.PolicyDetails {
+  font-weight: 400;
+
+  > div,
+  > li {
+    margin-bottom: 24px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

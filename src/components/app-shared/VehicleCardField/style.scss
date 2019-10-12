@@ -1,0 +1,36 @@
+.shared-VehicleCardField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .not-my-car {
+    margin-left: auto;
+    color: $persian-green;
+    cursor: pointer;
+  }
+
+  // repeated in driver and ph
+  .endorsement-card-actions {
+    display: flex;
+
+    > * {
+      margin-left: 8px;
+    }
+
+    > svg {
+      margin-left: 14px;
+    }
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $iron;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      margin-top: 6px;
+      cursor: pointer;
+    }
+  }
+}

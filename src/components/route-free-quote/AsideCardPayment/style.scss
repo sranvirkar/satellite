@@ -1,0 +1,47 @@
+.free-quote-AsideCardPayment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+  transition: top ease 200ms;
+
+  @media (max-width: 970px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0;
+  }
+
+  > .shared-FormContainer {
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 0;
+  }
+
+  > div.secure-checkout {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 100%;
+    margin-left: -24px;
+
+    @media (max-width: 650px) {
+      position: static;
+      top: 0;
+      margin-left: 0;
+    }
+
+    > i {
+      position: relative;
+      bottom: 3px;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.global-Logo {
+  font-family: 'Rubik';
+  display: flex;
+  flex-direction: column;
+
+  &.center {
+    text-align: center;
+  }
+
+  > .Poncho {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    color: $big-stone;
+  }
+
+  > .Insurance {
+    font-size: 14px;
+    letter-spacing: -0.42px;
+    color: $persian-green;
+  }
+}

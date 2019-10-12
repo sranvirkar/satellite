@@ -1,0 +1,93 @@
+.shared-InputDate-Calendar {
+  position: absolute;
+  top: calc(100% + 6px);
+  z-index: 9;
+  background: $white;
+  overflow: hidden;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 301px;
+  // padding: 8px 12px 12px;
+  border: 1px solid $fuel-yellow;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  font-family: "Rubik";
+
+  @media (max-width: 360px) {
+    left: -30px;
+  }
+
+  > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 8px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 174px;
+
+    padding: 8px 12px 12px;
+    box-sizing: border-box;
+    margin-bottom: auto;
+    transition: transform ease 200ms;
+    overflow-y: scroll;
+
+    &.days > li {
+      width: calc(100% / 7);
+      // height: 18px;
+      height: 25px;
+    }
+
+    &.months > li {
+      text-align: center;
+      width: calc(100% / 3);
+      // height: 18px;
+      height: 30px;
+
+    }
+
+    &.years > li {
+      text-align: center;
+      width: calc(100% / 5);
+      height: 25px;
+    }
+
+    > p {
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 20px;
+      padding-bottom: 8px;
+    }
+
+    > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39px;
+      height: 18px;
+      cursor: pointer;
+
+      &:focus {
+        color: $bluish-green;
+      }
+
+      &.disabled {
+        cursor: default;
+        color: $gallery;
+      }
+
+      &:not(.disabled):hover {
+        background: #efefef;
+      }
+    }
+  }
+}

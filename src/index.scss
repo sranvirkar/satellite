@@ -1,0 +1,74 @@
+// For reference, make sure you have access to:
+// https://bitbucket.org/jan-werkhoven/poncho-reusables/
+
+// $reusables: "node_modules/poncho-reusables/src";
+// $assets: '/poncho/resource/poncho/assets';
+
+// Variables
+// @import "node_modules/poncho-reusables/src/sass/variables/colours";
+// @import "node_modules/poncho-reusables/src/sass/variables/fonts";
+// @import "node_modules/poncho-reusables/src/sass/variables/easings";
+
+// Mixins
+// @import "node_modules/poncho-reusables/src/sass/mixins/responsive";
+// @import "node_modules/poncho-reusables/src/sass/mixins/headings";
+// @import "node_modules/poncho-reusables/src/sass/mixins/paragraphs";
+
+// Fonts
+// @import "node_modules/poncho-reusables/src/sass/fonts/rubik";
+
+// @font-face {
+//   font-family: "Rubik-Regular";
+//   src: local("Rubik Regular"), local("Rubik-Regular"),
+//     url("#{$assets}/fonts/subset-Rubik-Regular.woff2") format("woff2"),
+//     url("#{$assets}/fonts/subset-Rubik-Regular.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: "Rubik-Medium";
+//   src: local("Rubik Medium"), local("Rubik-Medium"),
+//     url("#{$assets}/fonts/subset-Rubik-Medium.woff2") format("woff2"),
+//     url("#{$assets}/fonts/subset-Rubik-Medium.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: "Rubik-Bold";
+//   src: local("Rubik Bold"), local("Rubik-Bold"),
+//     url("#{$assets}/fonts/subset-Rubik-Bold.woff2") format("woff2"),
+//     url("#{$assets}/fonts/subset-Rubik-Bold.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// Normalisation
+// @import "node_modules/poncho-reusables/src/sass/normalise/cross-browser";
+// @import "node_modules/poncho-reusables/src/sass/normalise/cross-project";
+
+// Cross-app reusables
+// @import "node_modules/poncho-reusables/src/components/Footer/style.scss";
+
+@import "styles/reset";
+@import "styles/common";
+@import "styles/variables";
+@import "styles/ui-kit-text";
+@import "styles/ui-kit-elements";
+@import "styles/poncho-elements";
+
+@import "components/app-global/stylesheets";
+@import "components/app-shared/stylesheets";
+
+@import "components/App";
+@import "components/route-index/Route.scss";
+@import "components/route-free-quote/Route.scss";
+@import "components/route-online-self-service/Route.scss";
+
+// TODO replace inline styles with CSS
+// background-image: url('/poncho/resource/poncho/assets/img/form-start-modal-rhs.png');
+// $assetsPath: '/poncho/resource/poncho/assets';
+// body {
+//   background-image: url("#{$assetsPath}/img/form-start-modal-rhs.png");
+// }

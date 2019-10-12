@@ -1,0 +1,32 @@
+.free-quote-AsideReasonsToBuy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 10px 0px;
+  
+    label {
+      margin-bottom: 16px;
+    }
+    > ul {
+      > li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+  
+        > span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-variant-numeric: tabular-nums;
+          width: 24px;
+          height: 23px;
+          padding-top: 1px;
+          border: 1px solid $mid-grey;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  

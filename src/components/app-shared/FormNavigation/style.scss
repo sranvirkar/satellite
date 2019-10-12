@@ -1,0 +1,69 @@
+nav.shared-FormNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 56px;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 15px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: $persian-green;
+  z-index: 1;
+
+  > a {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 15px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      padding-left: 2px;
+      min-width: 23px;
+      min-height: 25px;
+      line-height: 25px;
+      background: rgba($ebony, 0.2);
+      color: white;
+
+      > svg {
+        width: 21px;
+        margin-right: 2px;
+      }
+    }
+
+    &.active {
+      span {
+        background: white;
+        color: $persian-green;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+
+    p {
+      color: white;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 714px) {
+    justify-content: end;
+  }
+}

@@ -1,0 +1,261 @@
+.ui-kit-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 200%;
+  color: $emperor;
+  white-space: nowrap;
+
+  @media (max-width: 800px) {
+    font-size: 6vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+}
+
+.ui-kit-h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 105%;
+  color: $emperor;
+
+  @media (max-width: 600px) {
+    font-size: 5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
+}
+
+.ui-kit-body {
+  font-size: 14px;
+  line-height: 150%;
+  color: $emperor;
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.ui-kit-body-small {
+  font-size: 12px;
+  line-height: 150%;
+  color: $emperor;
+
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
+}
+
+.ui-kit-label {
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: $emperor;
+  margin-top: 5px;
+
+  @media (max-width: 600px) {
+    font-size: 3.5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.ui-kit-label-bold {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: $emperor;
+  margin-top: 5px;
+
+  @media (max-width: 600px) {
+    font-size: 3.5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.ui-kit-label-bold-with-padding {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 250%;
+  letter-spacing: 0.5px;
+  color: $emperor;
+  text-transform: capitalize;
+
+  @media (max-width: 600px) {
+    font-size: 3.5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.poncho-h1 {
+  font-family: 'Rubik';
+  font-size: 59px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: -2.4px;
+  color: $ebony;
+  &.grey {
+    color: $mid-grey;
+  }
+}
+
+.poncho-h2 {
+  font-family: 'Rubik';
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: $ebony;
+  &.grey {
+    color: $mid-grey;
+  }
+
+  @media (max-width: 970px) {
+    font-size: 33px;
+    line-height: 44px;
+  }
+}
+
+.poncho-h3 {
+   font-family: 'Rubik';
+   font-size: 33px;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.9px ;
+   color: $ebony;
+   &.grey {
+     color: $mid-grey;
+   }
+}
+
+.poncho-h4 {
+  font-family: 'Rubik';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.8px;
+  color: $ebony;
+  &.grey {
+    color: $mid-grey;
+  }
+}
+
+.poncho-lead {
+  font-family: 'Rubik';
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: -0.2px;
+   color: $ebony;
+   &.bold {
+     font-weight: 600;
+   }
+   &.grey {
+     color: $mid-grey;
+   }
+   &.yellow {
+     color: $fuel-yellow;
+   }
+
+   @media (max-width: 970) {
+     font-size: 18px;
+     line-height: 20px;
+   }
+}
+
+.poncho-h5 {
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: $ebony;
+  &.grey {
+    color: $mid-grey;
+  }
+}
+
+.poncho-h6 {
+  font-family: 'Rubik';
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $ebony;
+
+  &.demi-bold {
+    font-weight: 600;
+  }
+  &.grey {
+    color: $mid-grey;
+  }
+}
+
+.poncho-body {
+  font-family: 'Rubik';
+  font-size: 14px;
+  line-height: 24px;
+
+  &.regular {
+    font-weight: 400;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+  &.bold {
+    font-weight: 600;
+  }
+  &.grey {
+    color: $mid-grey;
+  }
+  &.light-grey {
+    color: $storm-gray;
+  }
+  &.short {
+    line-height: 20px;
+  }
+  &.teal {
+    color: $persian-green;
+  }
+}
+
+.poncho-caption {
+  font-family: 'Rubik';
+  font-size: 11px;
+  line-height: 1.45;
+  color: $ebony;
+  &.grey {
+    color: $storm-gray;
+  }
+  &.teal {
+    color: $persian-green;
+  }
+  &.red {
+    color: $cinnabar;
+  }
+  &.bold {
+    font-weight: 600;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

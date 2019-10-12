@@ -1,0 +1,6 @@
+.shared-InputVehicleSearch {
+  &.disabled {
+    cursor: pointer;
+    pointer-events: none;
+  }
+}

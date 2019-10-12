@@ -1,0 +1,85 @@
+//overrides:
+.braintree-upper-container {
+  z-index: 1; // prevents cc form from overlaying the sticky header
+}
+
+.braintree-sheet {
+  border-radius: 0;
+}
+
+.braintree-sheet__content--form {
+  background-color: $whisper;
+}
+
+.braintree-sheet__content--form .braintree-form__field-group .braintree-form__label {
+  height: 20px;
+  color: $ebony;
+  font-family: Rubik;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.braintree-sheet__header .braintree-sheet__text {
+  height: 24px;
+  color: $ebony;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.braintree-sheet__content--form .braintree-form__field-group .braintree-form__field-error,
+.braintree-sheet--has-error .braintree-sheet__error .braintree-sheet__error-text {
+    height: 20px;
+    color:  $well-read;
+    font-family: Rubik;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.braintree-div .poncho-btn-primary-reg {
+    width:100%;
+}
+
+.braintree-sheet__container {
+    margin: 0;
+}
+
+// WARNING: This may be unstable depending on how often braintree changes their CSS classes...
+.braintree-div {
+  .AlertMessage {
+    margin-top: 15px;
+  }
+  // Hide braintree form until the instance finishes loading
+  .hide {
+    display: none;
+  }
+
+  // Hide "Paying with card" text
+  .braintree-placeholder {
+    display: none;
+  }
+
+  // Make it look nicer/more like the design for the Billing page only
+  &.read-only {
+    padding: 0;
+    pointer-events: none;
+
+    .braintree-heading, .braintree-toggle, .braintree-method__icon-container.braintree-method__check-container {
+      display: none;
+    }
+
+    .braintree-method {
+      border: none;
+      padding: 21px 25px;
+    }
+
+    .braintree-method__label {
+      font-weight: 400 !important;
+    }
+
+    .braintree-show-methods {
+      z-index: 0; // otherwise the modal does not cover it
+    }
+  }
+}

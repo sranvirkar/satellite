@@ -1,0 +1,15 @@
+.App {
+  background-color: $athens-gray;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 95vw; // FUTURE FIX: Adding this because opening the modal will make it only take up half the width of the screen somehow... and 100vw will add a horizontal scrollbar 
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}

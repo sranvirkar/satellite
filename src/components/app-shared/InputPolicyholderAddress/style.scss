@@ -1,0 +1,76 @@
+.InputPolicyholderAddress-container {
+  > .InputPolicyHolderAddress {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+      display:flex;
+      position: relative;
+      height: 20px;
+      line-height: 20px;
+      padding-left: 24px;
+    }
+
+    & input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked + label > .customRadio {
+        background-color: $fuel-yellow;
+        height: 16px;
+        width: 16px;
+        border-color: $fuel-yellow;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    & .customRadio {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      border: 1px solid $french-gray;
+      border-radius: 100%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display:none;
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $white;
+      }
+    }
+
+    & .Option {
+      + .Option {
+        margin-top:8px;
+      }
+    }
+  }
+
+  > button.clearButton {
+    font-family: 'Rubik';
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: underline;
+    user-select: none;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}

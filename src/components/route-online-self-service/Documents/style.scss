@@ -1,0 +1,11 @@
+@import "Document/style";
+
+.Documents {
+  max-width: 610px;
+
+  .shared-FormContainer {
+    + .shared-FormContainer {
+      margin-top: 27px;
+    }
+  }
+}

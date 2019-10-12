@@ -1,0 +1,55 @@
+@import "./Popup/style";
+
+.shared-Tooltip {
+  // temporary fix, remove this when you have time
+   bottom: -2px;
+   position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.shared-Tooltip-bubble {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #e6f6ee;
+  border-radius: 4px;
+  padding: 20px 14px;
+  font-size: 11px;
+  line-height: 150%;
+  z-index: 1;
+
+  div.shared-Tooltip-caret {
+    position: absolute;
+    top: 100%;
+    border: 8px solid transparent;
+    box-sizing: border-box;
+    border-top-color: #e6f6ee;
+    height: 16px;
+    width: 16px;
+    cursor: default;
+  }
+
+  &.down {
+    div.shared-Tooltip-caret {
+      top: unset;
+      bottom: 100%;
+      border-top-color: transparent;
+      border-bottom-color: #e6f6ee;
+    }
+  }
+
+  > i.material-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  > span {
+    padding-right: 12px;
+  }
+}

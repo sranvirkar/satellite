@@ -1,0 +1,19 @@
+.shared-Form-Section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding: 15px 5px;
+  }
+
+  > .shared-FormField {
+    margin-bottom: 40px;
+  }
+
+  > button {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}

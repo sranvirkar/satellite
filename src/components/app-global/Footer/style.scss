@@ -1,0 +1,63 @@
+footer.global-Footer {
+  font-family: 'Rubik';
+  background-color: $white;
+
+  & .poncho-h6, & .poncho-caption {
+    color: $storm-gray;
+  }
+
+  > div.container {
+    box-sizing: border-box;
+    height: 282px;
+    padding: 42px 135px 30px;
+    display: grid;
+    grid-template-areas:
+      "logo nav disclaimer"
+      "copyright copyright copyright";
+    grid-template-columns: 220px 1fr 270px;
+
+    @media (max-width: 1439px) {
+      height: 371px;
+      padding: 23px 16px 19px;
+      grid-template-areas:
+        "logo"
+        "nav"
+        "copyright";
+      grid-template-columns: 1fr;
+    }
+
+    & div.logo-with-tagline {
+      grid-area: logo;
+      width: 220px;
+    }
+
+    > nav {
+      grid-area: nav;
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: 1439px) {
+        justify-content: space-between;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    & div.disclaimer {
+      grid-area: disclaimer;
+      width: 270px;
+    }
+
+    & p.copyright {
+      grid-area: copyright;
+    }
+  }
+
+  .disclaimer{
+    a {
+      color: #00b3a5;
+    }
+  }
+}

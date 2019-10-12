@@ -1,0 +1,100 @@
+.shared-InputDateSingleDay-Calendar {
+  font-family: "Rubik";
+
+  position: absolute;
+  top: calc(100% + 6px);
+  z-index: 9;
+  background: $white;
+  overflow: hidden;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 301px;
+  padding: 8px 12px 12px;
+  border: 1px solid $fuel-yellow;
+
+  &.left-align {
+    left: 0;
+  }
+
+  &.right-align {
+    right: 0;
+  }
+
+  @media (max-width: 360px) {
+    left: -30px;
+    right: 0;
+  }
+
+  div.month-panels {
+    display: flex;
+    user-select: none;
+    overflow: hidden;
+
+    > div.pane {
+      min-width: 100%;
+      transition: transform ease 200ms;
+
+      > p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20px;
+        padding-bottom: 8px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 39px;
+          height: 24px;
+          cursor: pointer;
+
+          &.blank,
+          &.title {
+            pointer-events: none;
+            user-select: none;
+          }
+
+          &.disabled {
+            cursor: default;
+            color: $gallery;
+          }
+
+          &:not(.disabled):hover {
+            background: #efefef;
+          }
+        }
+      }
+
+      > i.material-icons {
+        position: absolute;
+        cursor: pointer;
+        z-index: 2;
+        transition: transform ease 200ms;
+
+        &.prev {
+          top: 0;
+          left: 0;
+          height: 24px;
+          width: 24px;
+          border-radius: 12px;
+          background: $athens-gray;
+        }
+
+        &.next {
+          top: 0;
+          right: 0;
+          height: 24px;
+          width: 24px;
+          border-radius: 12px;
+          background: $athens-gray;
+        }
+      }
+    }
+  }
+}

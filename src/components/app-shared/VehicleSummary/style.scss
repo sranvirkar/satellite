@@ -1,0 +1,59 @@
+@import "./Premium/style";
+@import "./Details/style";
+@import "./Value/style";
+@import "./Cover/style";
+@import "./Excess/style";
+
+.shared-VehicleSummary {
+  .summary-body {
+    padding: 0 24px;
+
+    > .vehicle-perils {
+      h5 {
+        padding-top: 20px;
+      }
+
+      p {
+        display: flex;
+        margin-top: 8px;
+      }
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    > .vehicle-drivers {
+      position: relative;
+      h5 {
+        height: 48px;
+        padding-top: 20px;
+        box-sizing: border-box;
+      }
+
+      .drivers-edit-link {
+        position: absolute;
+        right: 0;
+        top: 16px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        color: #00b3a5;
+        cursor: pointer;
+      }
+
+      > fieldset {
+        margin-left: -8px;
+        width: 100%;
+      }
+
+      > .shared-DriverCardField {
+        padding-bottom: 8px;
+
+        &:last-child {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

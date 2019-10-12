@@ -1,0 +1,38 @@
+.shared-InputCheckbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik';
+  margin-top: 8px;
+
+  // & input[type="checkbox"] {
+  //   position: absolute;
+  //   appearance: none;
+  //   opacity: 0;
+  // }
+
+  > li {
+    position: relative;
+
+    > label {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+      box-sizing: border-box;
+    }
+
+    > input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      display: block;
+      // width: 100%;
+      // height: 100%;
+      appearance: none;
+      opacity: 0;
+      // z-index: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.shared-VehicleSummary-Value {
+  position: relative;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid $iron;
+
+  .price-number-rhs {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

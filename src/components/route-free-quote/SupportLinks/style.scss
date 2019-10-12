@@ -1,0 +1,41 @@
+.free-quote-SupportLinks {
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 64px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  > img {
+    height: 50px;
+    padding-left: 8px;
+
+    @media (max-width: 600px) {
+      padding-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 8px;
+
+    @media (max-width: 600px) {
+      padding-left: 0;
+      margin-right: auto;
+    }
+
+    > a,
+    > a:link,
+    > a:visited {
+      color: $persian-green;
+      text-decoration: none;
+    }
+  }
+}

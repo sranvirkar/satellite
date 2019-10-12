@@ -1,0 +1,43 @@
+.BraintreePaymentFormContainer {
+  .payment-form {
+    padding: 20px 24px;
+  }
+
+  .price-details {
+    padding: 20px 24px;
+    background-color: $athens-gray;
+
+    > div.premium {
+      background-color: $athens-gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > div.premium-price {
+        font-family: "Rubik";
+        background: $fuel-yellow;
+        color: white;
+        padding: 4px 7px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        border-radius: 4px;
+      }
+    }
+
+    > button {
+      margin-top: 25px;
+    }
+
+    > ul {
+      > li {
+        border-color: $mischka;
+        
+        &:first-child {
+          border-top: none;
+        }
+      }
+      
+    }
+  }
+}

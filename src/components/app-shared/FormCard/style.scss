@@ -1,0 +1,208 @@
+.shared-FormCard {
+  border: 2px solid $iron;
+  border-radius: 4px;
+  background: white;
+
+  &.selected {
+    border-color: $fuel-yellow;
+  }
+
+  &.has-footer {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 0;
+  }
+
+  &.pay-section-policyholder {
+    border: none;
+    background: transparent;
+
+    > .inner {
+      padding: 0 24px;
+
+      > svg {
+        margin: 24px 0;
+      }
+
+      .right {
+        display: none; // hacky solution to hide the yellow selected tick
+      }
+    }
+  }
+
+  // this class is defined in VehicleSummary
+  &.pay-section-cover {
+    background: transparent;
+    @media (min-width: 651px) {
+      padding-top: 12px;
+    }
+
+    > .inner {
+      .left > p {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  > .inner {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    min-height: 96px;
+    padding: 0 12px;
+
+    > svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 72px;
+      width: 72px;
+      min-width: 72px;
+      margin: 12px 0;
+      border-radius: 50%;
+    }
+
+    > .left {
+      padding-left: 16px;
+      > p {
+        padding-top: 24px;
+        text-transform: uppercase;
+      }
+
+      > ul {
+        padding-bottom: 24px;
+        margin-top: 4px;
+
+        > li {
+          display: flex;
+          align-items: center;
+
+          > svg {
+            width: 16px;
+            margin-right: 8px;
+            // temp fix just for alignment, maybe can be made better
+            position: relative;
+            top: -1px;
+          }
+
+          > i { // replace with svgs in the svgIcons helper
+            font-size: 16px;
+            color: #B6B7BC;
+            margin-right: 4px;
+          }
+
+          > span {
+            // height: 20px;
+            color: $storm-gray;
+            vertical-align: bottom;
+            //word-break: break-all;
+          }
+        }
+      }
+
+    .status-wrapper {
+      text-transform: none;
+      font-weight: normal;
+      margin-left: 10px;
+      .active-text {
+        color:#68B34F;
+          &:before {
+            content: '';
+            height: 12px;
+            width: 12px;
+            background-color: #68B34F;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 2px;
+          }
+        }
+        .grace-text {
+          color:#ED9E37;
+            &:before {
+              content: '';
+              height: 12px;
+              width: 12px;
+              background-color: #ED9E37;
+              border-radius: 50%;
+              display: inline-block;
+              margin-right: 2px;
+            }
+          }
+          .lapse-text {
+            color:#E63A3C;
+              &:before {
+                content: '';
+                height: 12px;
+                width: 12px;
+                background-color: #E63A3C;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 2px;
+              }
+            }
+      }
+    }
+    
+    &.compact {
+      align-items: center;
+      min-height: 64px;
+
+      > svg {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+      }
+
+      > .left {
+        p {
+          padding-top: 0;
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
+
+    > .right {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+    }
+  }
+
+  &.mobile-compact > .inner {
+    @media (max-width: 650px) {
+      align-items: center;
+      min-height: 64px;
+
+      > svg {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+
+      > .left {
+        > p {
+          padding-top: 0;
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        > ul {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.big-padding {
+    > .inner {
+      padding: 0 24px;
+      > svg {
+        margin: 24px 0;
+      }
+    }
+  }
+}

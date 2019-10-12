@@ -1,0 +1,32 @@
+.shared-VehicleSummary-Premium {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+  height: 80px;
+  border-bottom: 1px solid $iron;
+  background: $athens-gray;
+
+  span.monthly {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    background: $fuel-yellow;
+    color: white;
+    padding: 0 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 4px;
+
+    &.invalid {
+      background: $iron;
+    }
+  }
+}

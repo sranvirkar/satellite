@@ -1,0 +1,28 @@
+.shared-DriverCardField {
+  width: 100%;
+
+  // repeated in vehicle and ph
+  .endorsement-card-actions {
+    display: flex;
+
+    > * {
+      margin-left: 8px;
+    }
+
+    > svg {
+      margin-left: 14px;
+    }
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $iron;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      margin-top: 6px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.shared-VehicleSummary-Details {
+  position: relative;
+  padding: 24px 0;
+  border-bottom: 1px solid $iron;
+
+  ul {
+    margin-top: 8px;
+    
+    li {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

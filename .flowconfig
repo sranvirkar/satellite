@@ -1,0 +1,3 @@
+module.name_mapper='^reducers\/\(.*\)$' -> '<PROJECT_ROOT>/src/reducers/\1'
+module.name_mapper='^reducers$' -> '<PROJECT_ROOT>/src/reducers'
+module.system.node.resolve_dirname='<PROJECT_ROOT>/src/'

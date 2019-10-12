@@ -1,0 +1,26 @@
+.shared-ToggleList {
+  font-family: 'Rubik';
+  font-size: 14px;
+  background-color: rgba($iron, 0.5);
+  border-radius: 4px;
+
+  > div.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    cursor: pointer;
+
+    > img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  > div.content {
+    padding: 0 16px 14px;
+    max-height: 151px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,0 +1,129 @@
+li.shared-FormContainer {
+  font-family: 'Rubik';
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(black, 0.12);
+  margin-bottom: 12px;
+  list-style: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 24px;
+    border-bottom: 1px solid $iron;
+    min-height: 56px;
+
+    > h3.poncho-h4 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    > h4.poncho-body {
+      // this is a hack, but it works - only when there is a super and a subtitle
+      margin-top: -16px;
+      margin-bottom: 16px;
+    }
+
+    > span {
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $persian-green;
+      cursor: pointer;
+    }
+  }
+
+  > main {
+    &.padding {
+      padding: 24px 24px 24px 16px;
+    }
+
+    &.sidebar {
+      padding: 20px 24px 24px;
+    }
+
+    &.declarations {
+      > div {
+        > fieldset {
+          padding-left: 56px;
+          box-sizing: border-box;
+          padding-right: 24px;
+          margin-right: 0;
+          width: 100%;
+          border-bottom: 1px solid $iron;
+
+          // @media (max-width: 650px) {
+          //   padding-bottom: 0;
+          // } // seems like a bad idea
+
+          &:nth-child(2n-1) {
+            background: $whisper;
+          }
+
+          &:last-child {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+
+          > .label-wrapper {
+            margin-top: 24px;
+          }
+
+          div {
+            > fieldset {
+              box-sizing: border-box;
+              width: 100%;
+              padding: 16px;
+              margin-top: 20px;
+
+              @media (max-width: 650px) {
+                margin-left: -56px;
+                width: calc(100% + 80px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background: $persian-green;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+
+    &:disabled  {
+      background: $iron;
+      color: $storm-gray;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    @media (min-width: 970px) {
+      &:hover,
+      &:focus {
+
+        background: $teal;
+        &:disabled  {
+          background: $iron;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.shared-InputString {
+  display: flex;
+  font-size: 14px;
+  font-family: 'Rubik';
+  color: $ebony;
+  height: 40px;
+  width: 100%;
+  margin-top: 8px;
+
+  box-sizing: border-box;
+  border: 1px solid $mischka;
+  border-radius: 4px;
+  padding-left: 15px;
+  appearance: none;
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.answer {
+    border-color: $emerald;
+  }
+
+  &.error {
+    border-color: $well-read;
+  }
+
+  &:focus {
+    border-color: $fuel-yellow;
+  }
+
+  &::placeholder {
+    color: $storm-gray;
+  }
+}

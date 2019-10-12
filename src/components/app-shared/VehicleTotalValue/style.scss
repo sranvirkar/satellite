@@ -1,0 +1,100 @@
+.shared-VehicleTotalValue {
+  position: relative;
+  font-family: 'Rubik';
+  padding-top: 25px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    width: calc(100% + 48px);
+    height: 1px;
+    top: 1px;
+    background: $iron;
+  }
+
+  > div.body {
+    display: flex;
+
+    > div.body-text {
+      margin-right: 48px;
+
+      > p.single-car-value {
+        margin-top: 4px;
+        line-height: 1.43;
+      }
+
+      @media (max-width: 400px) {
+        //display: none;
+        margin-right: 0px;
+      }
+    }
+
+    > div.value-container {
+      text-align: right;
+
+      .value {
+        width: 147px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: $fuel-yellow;
+        color: $white;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.9px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 400px) {
+          background-color: transparent;
+          color: $ebony;
+        }
+      }
+
+      .poncho-caption {
+        margin-top: 8px;
+      }
+
+      > div.redbook-logo {
+        img {
+          width: 126px;
+          height: 20px;
+          margin-top: 9px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        text-align: center;
+        width: 147px;
+        margin: 10px auto 0px auto;
+
+        > div.redbook-logo {
+          text-align: right; // TODO: this isn't working - low priority fix 
+        }
+      }
+    }
+
+    @media (max-width: 400px) {
+      justify-content: center;
+      display: block;
+    }
+  }
+
+  > .explanation {
+    margin-top: 24px;
+
+    .explanation-text {
+      padding: 10px 12px;
+      background-color: $white;
+      border: solid 1px $mischka;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 400px) {
+      //display: none;
+    }
+  }
+}

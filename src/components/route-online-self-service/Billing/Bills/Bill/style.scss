@@ -1,0 +1,33 @@
+li.Bill {
+  height: 72px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+
+  > i {
+    margin-right: 15px;
+    color: $storm-gray;
+  }
+  
+  > div.document-details {
+    line-height: 1.43;
+    font-weight: 400;
+  }
+
+  > button.pay-button {
+    outline: none;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  > a, button.pay-button {
+    margin-left: auto;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  + li.Bill {
+    border-top: 1px solid $iron;
+  }
+}

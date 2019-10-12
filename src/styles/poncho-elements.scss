@@ -1,0 +1,90 @@
+.poncho-btn-primary-reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: $persian-green;
+  line-height: 40px;
+  height: 40px;
+  min-width: 120px;
+  padding: 0 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+
+  font-family: 'Rubik';
+  font-size: 14px;
+  font-weight: 400;
+
+  &:focus {
+    position: relative;
+    top: -1px;
+  }
+
+  &.wide {
+    width: 100%;
+  }
+
+  &:hover {
+    @media (min-width: 970px) {
+      background: $teal;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    background: $iron;
+    color: $storm-gray;
+  }
+
+  &.transparent {
+    background: transparent;
+    border: none;
+    color: $persian-green;
+
+    @media (min-width: 970px) {
+      &:hover {
+        color: $teal;
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 970px) {
+      &:hover {
+        background: darken(transparent, 0.05);
+      }
+    }
+
+    &:focus {
+      background: darken(transparent, 0.05);
+      color: $teal;
+      top: 0;
+    }
+
+    &.grey {
+      color: $storm-gray;
+      border: 1px solid $iron;
+
+      &:focus {
+        color: $ebony;
+        border: 1px solid $iron;
+      }
+    }
+  }
+
+  &.white {
+    background: white;
+    border: 1px solid $iron;
+    color: $ebony;
+    text-align: center;
+
+    @media (min-width: 970px) {
+      &:hover {
+        background: $athens-gray;
+      }
+    }
+  }
+}

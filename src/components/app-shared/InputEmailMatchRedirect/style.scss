@@ -1,0 +1,12 @@
+.shared-InputEmailMatchRedirect {
+  > a,
+  > a:link,
+  > a:visited {
+    text-decoration: none;
+    color: $persian-green;
+  }
+
+  &.poncho-btn-primary-reg {
+    margin-top: 8px;
+  }
+}

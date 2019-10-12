@@ -1,0 +1,12 @@
+.AlertMessage {
+  background-color: $athens-gray;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+
+  > div.alert-icon {
+    position: relative;
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+}

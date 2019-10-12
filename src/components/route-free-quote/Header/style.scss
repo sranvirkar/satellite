@@ -1,0 +1,26 @@
+.Route-FreeQuote-Header {
+  font-family: 'Rubik';
+  background-color: $white;
+  height: 72px;
+  width: 100%;
+
+  > div.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+    
+  }
+  .navLinks {
+    margin-left:auto;
+    
+    > a {
+      font-size: 14px;
+      color: $persian-green;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+  }
+}

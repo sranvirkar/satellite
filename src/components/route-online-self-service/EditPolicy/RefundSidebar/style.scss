@@ -1,0 +1,19 @@
+.oss-edit-RefundSidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+  transition: top ease 200ms;
+
+  @media (max-width: 970px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0;
+    margin-top: 12px;
+  }
+}

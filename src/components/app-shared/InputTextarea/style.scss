@@ -1,0 +1,35 @@
+.shared-InputTextarea {
+  display: flex;
+  font-size: 16px;
+  color: $emperor;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 120px;
+  max-height: 600px;
+  min-height: 34px;
+  margin-top: 10px;
+  font-family: 'Rubik';
+
+  box-sizing: border-box;
+  border: 1px solid #dddce6;
+  border-radius: 2px;
+  padding: 6px 15px 6px 15px;
+  appearance: none;
+
+  &.answer {
+    border-color: $bluish-green;
+  }
+
+  &.error {
+    border-color: $pastel-red;
+  }
+
+  &:focus {
+    border-width: 2px;
+    padding: 5px 14px 5px 14px;
+  }
+
+  &::placeholder {
+    color: $nobel;
+  }
+}

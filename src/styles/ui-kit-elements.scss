@@ -1,0 +1,152 @@
+.ui-kit-btn-primary,
+.ui-kit-btn-primary-alt,
+.ui-kit-btn-primary-grey {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 145px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 0 20px;
+  white-space: nowrap;
+  border: 1px solid $bluish-green;
+  border-radius: 2px;
+  color: $white;
+  background-color: $bluish-green;
+  cursor: pointer;
+  user-select: none;
+
+  &:focus {
+    background-color: darken($bluish-green, 5%);
+    border-color: darken($bluish-green, 5%);
+  }
+
+  @media (min-width: 601px) {
+    &:hover {
+      background-color: darken($bluish-green, 5%);
+      border-color: darken($bluish-green, 5%);
+    }
+  }
+
+  @media (max-width: 400px) {
+    line-height: 28px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.ui-kit-btn-primary-alt {
+  background-color: transparent;
+  color: $emperor;
+
+  &:focus {
+    background-color: rgba($black, 0.05);
+    border-color: darken($bluish-green, 5%);
+  }
+
+  @media (min-width: 601px) {
+    &:hover {
+      background-color: rgba($black, 0.05);
+      border-color: darken($bluish-green, 5%);
+    }
+  }
+}
+
+.ui-kit-btn-primary-grey {
+  background-color: $gallery;
+  color: $emperor;
+  border: none;
+  text-decoration: none;
+
+  &:focus {
+    background-color: darken($gallery, 0.05);
+  }
+
+  @media (min-width: 601px) {
+    &:hover {
+      background-color: darken($gallery, 0.05);
+    }
+  }
+}
+
+.ui-kit-pill-small {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: $nobel;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid $dusty-gray;
+  box-sizing: border-box;
+  user-select: none;
+
+  > i.material-icons {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  > span {
+    line-height: 18px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0px 12px;
+    border-radius: 9px;
+    font-size: 11px;
+
+    > i.material-icons {
+      font-size: 12px;
+      margin-right: 3px;
+    }
+
+    > span {
+      line-height: 14px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: 0px 8px;
+    border-radius: 9px;
+    font-size: 9px;
+
+    > i.material-icons {
+      font-size: 8px;
+      margin-right: 2px;
+    }
+
+    > span {
+      line-height: 12px;
+    }
+  }
+}
+
+.ui-kit-pill-medium {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: $white;
+  font-variant-numeric: tabular-nums;
+  background-color: $pastel-red;
+  border-color: $pastel-red;
+  line-height: 32px;
+  padding: 0px 16px;
+  border-radius: 17px;
+  font-size: 16px;
+
+  @media (max-width: 600px) {
+    line-height: 28px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 400px) {
+    line-height: 18px;
+    padding: 0px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+  }
+}

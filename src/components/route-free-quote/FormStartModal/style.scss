@@ -1,0 +1,63 @@
+.free-quote-FormStartModal {
+  display: flex;
+  overflow: visible;
+  background: white;
+  border-radius: 4px;
+  // margin: 64px 0;
+
+  > .section-wrapper {
+    max-width: 400px;
+
+    @media (max-width: 650px) {
+      max-width: none;
+    }
+
+    > h1 {
+      padding: 24px;
+      border-bottom: 1px solid $iron;
+    }
+
+    > section {
+      box-sizing: border-box; // related
+      padding: 24px 24px 24px 16px;
+      width: 100%;
+
+      > a {
+        margin-left: 8px;
+        margin-bottom: 12px;
+      }
+
+      > p {
+        text-align: center;
+        margin-left: 8px;
+      }
+    }
+  
+  .poncho-caption{
+   a {
+    text-decoration: none;
+    color: #00b3a5;
+
+    &:hover {
+      color: #6d6f78;
+    }
+   }
+  }
+
+  }
+
+  > div.image {
+    flex-grow: 1;
+    max-width: 370px;
+    width: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}

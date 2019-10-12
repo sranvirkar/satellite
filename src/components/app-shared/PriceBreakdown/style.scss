@@ -1,0 +1,12 @@
+ul.PriceBreakdown {
+  width: 100%;
+
+  > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 28px;
+    min-height: 40px;
+    border-top: 1px solid $athens-gray;
+  }
+}

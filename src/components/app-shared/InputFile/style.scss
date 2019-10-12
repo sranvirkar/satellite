@@ -1,0 +1,112 @@
+.shared-InputFile {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  height: 96px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Rubik';
+  background: #F3F3F3;
+
+  box-sizing: border-box;
+  appearance: none;
+
+  > input {
+  	width: 0.1px;
+  	height: 0.1px;
+  	opacity: 0;
+  	overflow: hidden;
+  	position: absolute;
+  	z-index: -1;
+
+    &:focus + {
+      border-width: 2px;
+      padding: 0px;
+    }
+  }
+
+  > label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 1px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+    text-align: center
+
+  }
+
+  
+
+  &.answer label {
+    border-color: $bluish-green;
+  }
+
+  &.error label {
+    border-color: $pastel-red;
+  }
+  div.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    background-color: rgba(16, 16, 16, 0.5);
+  }
+}
+.photo-container {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #E7E7E9;
+    padding: 15px 0px;
+    
+    &:last-child {
+      border: 0;
+    }
+  
+    svg {
+      float: right;
+      border: 1px solid #CECFD2;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+  }
+}
+.material-icons {
+  color: #B6B7BC;
+}
+.buttonContainer { 
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.confirmUpload {
+  text-align: center;
+
+  .green-circle-tick {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+.poncho-body a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #00b3a5;
+}
+
+span.poncho-caption-grey.filetype {
+    font-size: 11px;
+    color: #6D6F78;
+    line-height: 16px;
+}

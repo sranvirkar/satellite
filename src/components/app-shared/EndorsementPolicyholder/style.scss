@@ -1,0 +1,50 @@
+.shared-EndorsementPolicyholder {
+  > li {
+    margin-bottom: 24px;
+
+    > .shared-FormFieldGroup {
+      margin-left: -8px;
+    }
+
+    .endorsement-card-actions {
+      display: flex;
+
+      > * {
+        margin-left: 8px;
+      }
+
+      > svg {
+        margin-left: 14px;
+      }
+
+      > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $iron;
+        border-radius: 4px;
+        width: 32px;
+        height: 32px;
+        margin-top: 6px;
+        cursor: pointer;
+
+        &:disabled {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .endorsement-footer-actions {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $iron;
+
+      > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+fieldset.shared-FormField {
+  position: static; // if you make this component relative you break the tooltips which are inline
+  padding-left: 8px;
+  width: calc(100% - 8px);
+
+  // only apply inline rules for tablets and desktops
+  @media (min-width: 450px) {
+    &.inline {
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+    }
+
+    &.half {
+      max-width: calc(50% - 8px);
+      width: calc(100% - 8px);
+    }
+
+    &.max-240 {
+      max-width: 240px;
+      width: calc(100% - 8px);
+    }
+
+    &.max-120 {
+      max-width: 120px;
+      width: calc(100% - 8px);
+    }
+
+    &.inline-grow-120 {
+      max-width: calc(100% - 136px);
+      width: calc(100% - 8px);
+    }
+
+    &.child-max-120 input {
+      max-width: 120px;
+    }
+  }
+
+  .label-wrapper {
+    white-space: nowrap;
+    > label {
+      white-space: pre-line;
+    }
+    .shared-Tooltip {
+      margin-left: 0;
+    }
+  }
+
+  &.border {
+    border: 1px solid $iron;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  &.padding {
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  &.grey-bg {
+    background: $athens-gray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+  }
+
+  &:not(.validation-error) {
+    padding-bottom: 20px;
+  }
+
+  &.none {
+    display: none;
+  }
+
+  .super-title {
+    display: block;
+  }
+
+  > label {
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  > label.disabled { //temp
+    pointer-events: none;
+  }
+
+  .field-group-index {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background: $fuel-yellow;
+    font-family: "Rubik";
+    color: white;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.show-index {
+    // tooltips don't work with show-index right now
+    position: relative;
+
+    > .field-group-index {
+      display: flex;
+    }
+  }
+
+  .error-message {
+    line-height: 11px;
+    margin-bottom: 7px;
+    margin-top: 2px;
+    color: $well-read;
+  }
+
+  > h4 {
+    padding-top: 20px;
+  }
+
+  > .FormFieldGroup {
+    margin: 16px 24px 16px 0px;
+    padding: 8px;
+    background: $athens-gray;
+  }
+}

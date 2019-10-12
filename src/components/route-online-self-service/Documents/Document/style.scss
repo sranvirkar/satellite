@@ -1,0 +1,26 @@
+li.Document {
+  height: 72px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+
+  > i {
+    margin-right: 15px;
+    color: $storm-gray;
+  }
+  
+  > div.document-details {
+    line-height: 1.43;
+    font-weight: 400;
+  }
+
+  > a {
+    margin-left: auto;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  + li.Document {
+    border-top: 1px solid $iron;
+  }
+}

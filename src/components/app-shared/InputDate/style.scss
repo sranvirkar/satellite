@@ -1,0 +1,93 @@
+@import "./Calendar/style";
+
+.shared-InputDate {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin-top: 8px;
+  &.bring-to-front {
+    z-index: 4;
+  }
+
+  .manual-calendar-toggle {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 34px;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    color: $ebony;
+  }
+
+  input,
+  .pretty-overlay {
+    width: 100%;
+    height: 100%;
+    color: $ebony;
+    box-sizing: border-box;
+    border: 1px solid $mischka;
+    background: transparent;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    font-family: 'Rubik';
+    appearance: none;
+
+    @media (max-width: 650px) {
+      font-size: 16px;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    &.answer {
+      border-color: $emerald;
+    }
+
+    &.error {
+      border-color: $well-read;
+    }
+
+    &:focus,
+    &.calendar-active {
+      border-color: $fuel-yellow;
+    }
+
+    &::placeholder {
+      color: $storm-gray; // make me transparent if you're using pretty-overlay
+    }
+  }
+
+  input {
+    background: $white;
+  }
+
+  .pretty-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 36px; //cant be used for input because border width changes on focus
+    display: block;
+    padding-left: 15px;
+    color: $emperor;
+    border: 1px solid transparent;
+    user-select: none;
+    pointer-events: none;
+    box-sizing: border-box;
+
+    .placeholder {
+      color: $storm-gray;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+  }
+}
