@@ -21,7 +21,7 @@
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.26",
     "node-normalize-scss": "^8.0.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "normalizr": "^3.3.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-preset-env": "^6.6.0",
